@@ -1,8 +1,39 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 VirtualR – VR Tools Landing Page
 
-Currently, two official plugins are available:
+VirtualR is a modern, responsive landing page built using **React, Vite, and Tailwind CSS**.  
+This project focuses on clean UI, smooth hover & tilt animations, gradient buttons, and video-based sections to showcase VR development tools.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## ✨ Features
+
+- ⚡ Fast development with **Vite**
+- 🎨 Styled using **Tailwind CSS**
+- 📱 Fully responsive design
+- 🧭 Interactive navbar with hover & tilt effects
+- 🎥 Hero section with autoplay videos
+- 🧩 Reusable React components
+- 🌈 Gradient UI with smooth transitions
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js  
+- Vite  
+- Tailwind CSS  
+- Lucide Icons  
+- JavaScript (ES6)
+
+---
+
+## ⚙️ Installation & Run
+
+```bash
+npm install
+npm run dev
+   
+Screenshots / Demo
+
+![alt text](image.png)
