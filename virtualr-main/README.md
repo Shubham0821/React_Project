@@ -34,6 +34,3 @@ This project focuses on clean UI, smooth hover & tilt animations, gradient butto
 npm install
 npm run dev
    
-Screenshots / Demo
-
-![alt text](image.png)
