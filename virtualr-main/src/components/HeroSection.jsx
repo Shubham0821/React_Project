@@ -21,7 +21,7 @@ const HeroSection = () => {
           href="#"
           className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md 
              transition-all duration-300 
-             hover:-rotate-2 hover:scale-105 
+             hover:-rotate-1 hover:scale-105 
              hover:shadow-lg hover:shadow-orange-500/40"
         >
           Start for free

@@ -56,7 +56,7 @@ const Navbar = () => {
             </a> */}
             <a href="#" className="bg-gradient-to-r from-orange-300 to-orange-800 py-2 px-3 rounded-md 
              transition-all duration-300 
-             hover:-rotate-2 hover:scale-105 
+             hover:-rotate-1 hover:scale-105 
              hover:shadow-lg hover:shadow-orange-500/40 "
             >
               Create an account
@@ -74,17 +74,23 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a href={item.href}>{item.label}</a>
+                  <a 
+                    href={item.href} 
+                    className="relative group text-lg transition-colors duration-300 hover:text-orange-500"
+                  >
+                    <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+                    {item.label}
+                  </a>
                 </li>
               ))}
             </ul>
             <div className="flex space-x-6">
-              <a href="#" className="py-2 px-3 border rounded-md">
+              <a href="#" className="py-2 px-3 border rounded-md  hover:border-orange-500">
                 Sign In
               </a>
               <a
                 href="#"
-                className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800"
+                className="py-2 px-3 rounded-md bg-gradient-to-r  from-orange-300 to-orange-800"
               >
                 Create an account
               </a>
