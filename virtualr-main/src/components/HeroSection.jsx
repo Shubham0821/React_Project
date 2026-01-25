@@ -11,7 +11,7 @@ const HeroSection = () => {
           for developers
         </span>
       </h1>
-      <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
+      <p className="mt-10 text-lg text-center text-neutral-400 max-w-4xl">
         Empower your creativity and bring your VR app ideas to life with our
         intuitive development tools. Get started today and turn your imagination
         into immersive reality!
@@ -19,11 +19,14 @@ const HeroSection = () => {
       <div className="flex justify-center my-10">
         <a
           href="#"
-          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
+          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md 
+             transition-all duration-300 
+             hover:-rotate-2 hover:scale-105 
+             hover:shadow-lg hover:shadow-orange-500/40"
         >
           Start for free
         </a>
-        <a href="#" className="py-3 px-4 mx-3 rounded-md border">
+        <a href="#" className="py-3 px-4 mx-3 rounded-md border  hover:border-orange-500 ">
           Documentation
         </a>
       </div>
@@ -34,7 +37,7 @@ const HeroSection = () => {
           muted
           className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
         >
-          <source src={video1} type="video/mp4" />
+          <source src={video1} type="video/mp4"  className="hover:border-orange-500" />
           Your browser does not support the video tag.
         </video>
         <video

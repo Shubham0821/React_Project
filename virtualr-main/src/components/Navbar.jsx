@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0 group cursor-pointer">
             <img className="h-10 w-10 mr-2 transition-transform duration-300 group-hover:scale-110 " src={logo} alt="Logo" />
-            <span className="text-xl tracking-tight transition-colors duration-300 group-hover:text-orange-500 group-hover:rotate-3 ">VirtualR</span>
+            <span className="text-xl tracking-tight transition-colors duration-300  ">VirtualR</span>
           </div>
           {/* <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
@@ -26,17 +26,17 @@ const Navbar = () => {
             ))}
           </ul> */}
           <ul className="hidden lg:flex ml-14 space-x-12">
-             {navItems.map((item, index) => (
-           <li key={index} className="relative group">
-           <a
-              href={item.href}
-           className="transition-colors duration-300 group-hover:text-orange-500"
-            >
-           {item.label}
-         </a>
+            {navItems.map((item, index) => (
+              <li key={index} className="relative group">
+                <a
+                  href={item.href}
+                  className="transition-colors duration-300 group-hover:text-orange-500"
+                >
+                  {item.label}
+                </a>
 
-          <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
-          </li>
+                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+              </li>
             ))}
           </ul>
 
@@ -44,20 +44,20 @@ const Navbar = () => {
             {/* <a href="#" className="py-2 px-3 border rounded-md">
               Sign In
             </a> */}
-              <a href="#" className="py-2 px-3 border rounded-md transition-transform duration-300 hover:-rotate-3 hover:scale-105 hover:border-orange-500"
-               >
-                  Sign In
-           </a>
+            <a href="#" className="py-2 px-3 border rounded-md  hover:border-orange-500"
+            >
+              Sign In
+            </a>
             {/* <a
               href="#"
               className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
             >
               Create an account
             </a> */}
-            <a  href="#" className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md 
+            <a href="#" className="bg-gradient-to-r from-orange-300 to-orange-800 py-2 px-3 rounded-md 
              transition-all duration-300 
              hover:-rotate-2 hover:scale-105 
-             hover:shadow-lg hover:shadow-orange-500/40"
+             hover:shadow-lg hover:shadow-orange-500/40 "
             >
               Create an account
             </a>

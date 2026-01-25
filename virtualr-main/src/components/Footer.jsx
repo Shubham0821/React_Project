@@ -10,8 +10,9 @@ const Footer = () => {
               <li key={index}>
                 <a
                   href={link.href}
-                  className="text-neutral-300 hover:text-white"
+                  className="relative group text-neutral-300 transition-colors duration-300 hover:text-orange-500"
                 >
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
                   {link.text}
                 </a>
               </li>
@@ -25,8 +26,9 @@ const Footer = () => {
               <li key={index}>
                 <a
                   href={link.href}
-                  className="text-neutral-300 hover:text-white"
+                  className="relative group text-neutral-300 transition-colors duration-300 hover:text-orange-500"
                 >
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
                   {link.text}
                 </a>
               </li>
@@ -40,8 +42,9 @@ const Footer = () => {
               <li key={index}>
                 <a
                   href={link.href}
-                  className="text-neutral-300 hover:text-white"
+                  className="relative group text-neutral-300 transition-colors duration-300 hover:text-orange-500"
                 >
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
                   {link.text}
                 </a>
               </li>

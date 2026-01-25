@@ -10,7 +10,7 @@ const Pricing = () => {
       <div className="flex flex-wrap">
         {pricingOptions.map((option, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
-            <div className="p-10 border border-neutral-700 rounded-xl">
+            <div className={`p-10 border rounded-xl ${option.title === "Pro" ? 'border-orange-500 bg-gradient-to-b from-orange-900/20 to-transparent shadow-lg shadow-orange-900/30' : 'border-neutral-700'}`}>
               <p className="text-4xl mb-8">
                 {option.title}
                 {option.title === "Pro" && (
@@ -33,7 +33,11 @@ const Pricing = () => {
               </ul>
               <a
                 href="#"
-                className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-orange-900 border border-orange-900 rounded-lg transition duration-200"
+                className={`inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-xl rounded-lg transition duration-200 ${
+                  option.title === "Pro"
+                    ? 'bg-gradient-to-r from-orange-300 to-red-400 text-white hover:from-orange-600 hover:to-red-600'
+                    : 'border border-orange-900 hover:bg-orange-600 hover:text-white'
+                }`}
               >
                 Subscribe
               </a>
